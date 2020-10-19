@@ -7,7 +7,6 @@ module.exports.showCars_get = async (req, res) => {
     const cars = await Car.find();
     // Set status and return cars data
     res.status(200).json(cars);
-    console.log(cars);
   } catch (err) {
     console.log(err);
     res.status(400).send("error, cars not found");
@@ -23,7 +22,6 @@ module.exports.findCar_get = async (req, res) => {
     const car = await Car.findById(id);
     // Set status and return car data
     res.status(200).json(car);
-    console.log(car);
   } catch (err) {
     console.log(err);
     res.status(400).send("error, car not found");
@@ -38,16 +36,14 @@ module.exports.findCarsByMake_get = async (req, res) => {
     // Find car by make
     const cars = await Car.filterByName(make);
     // Create array with car objects to return
-    
+
     // Set status and return cars data
     res.status(200).json(cars);
-
   } catch (err) {
     console.log(err);
     res.status(400).send("error, car not found");
   }
-  
-}
+};
 
 // Add new car to db
 module.exports.addCar_post = async (req, res) => {
@@ -92,9 +88,6 @@ module.exports.addCar_post = async (req, res) => {
 
 // Update existing car in db
 module.exports.updateCar_post = async (req, res) => {
-
-  console.log("BE fired")
-  
   const id = req.params.carId;
   const {
     year,
@@ -107,8 +100,6 @@ module.exports.updateCar_post = async (req, res) => {
     booked,
     power,
     transmission,
-    convertible,
-    imagesURL,
   } = req.body;
 
   try {
@@ -133,7 +124,6 @@ module.exports.updateCar_post = async (req, res) => {
     );
     // Set status and return car data
     res.status(200).json(car);
-    console.log(car);
   } catch (err) {
     console.log(err);
     res.status(400).send("error, car not updated");
@@ -149,7 +139,6 @@ module.exports.removeCar_delete = async (req, res) => {
     const car = await Car.findByIdAndDelete(id);
     // Set status and return car data
     res.status(200).json(car);
-    console.log(car);
   } catch (err) {
     console.log(err);
     res.status(400).send("error, car not removed");

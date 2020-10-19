@@ -60,7 +60,7 @@ module.exports.login_post = async (req, res) => {
     // Send user ID
     res.status(200).json({ user: user._id });
   } catch (err) {
-    res.status(400).json({err});
+    res.status(400).json({ err });
   }
 };
 
@@ -100,32 +100,24 @@ module.exports.user_get = (req, res) => {
 
 // Update user data
 module.exports.updateUser_patch = async (req, res) => {
-  console.log("BE function triggered")
   const id = req.params.id;
-  console.log(`User id is: ${id}`)
-  const {
-    pictureURL,
-    name,
-    surname,
-    points
-  } = req.body;
-
-  console.log(`Picture URL is ${pictureURL}`)
+  const { pictureURL, name, surname } = req.body;
 
   try {
     // Find user by id and update
-    const user = await User.findByIdAndUpdate(id, {
-      $set: {
-        pictureURL: pictureURL,
-        name: name,
-        surname: surname
-      }
-    },
-    { upsert: true, new: true })
+    const user = await User.findByIdAndUpdate(
+      id,
+      {
+        $set: {
+          pictureURL: pictureURL,
+          name: name,
+          surname: surname,
+        },
+      },
+      { upsert: true, new: true }
+    );
     // Set status and return car data
     res.status(200).json(user);
-    console.log(user);
-
   } catch (err) {
     console.log(err);
     res.status(400).send("error, user not updated");
