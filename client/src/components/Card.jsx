@@ -50,7 +50,7 @@ function CardItem(props) {
       fontSize: "1.4rem",
       color: "#EB4440",
       marginBottom: "15px",
-      textAlign: "center"
+      textAlign: "center",
     },
     desciption: {
       fontSize: "1rem",
@@ -58,7 +58,7 @@ function CardItem(props) {
     btn: {
       color: "#EB4440",
       margin: "auto",
-      border: "1px solid #EB4440"
+      border: "1px solid #EB4440",
     },
     btnCTA: {
       color: "rgb(66,66,66)",
@@ -84,8 +84,6 @@ function CardItem(props) {
       marginRight: "-50vw",
       transform: "translate(-50%, -50%)",
       backgroundColor: "#323232",
-     
-      
     },
   };
 
@@ -103,7 +101,7 @@ function CardItem(props) {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        carId: props.data._id
+        carId: props.data._id,
       }),
     };
 
@@ -117,9 +115,7 @@ function CardItem(props) {
   return (
     <div id="card-item">
       <Card className={classes.root}>
-        <Typography className={classes.title}>
-          {props.data.make}
-        </Typography>
+        <Typography className={classes.title}>{props.data.make}</Typography>
         <CardActionArea onClick={openModal}>
           <CardMedia
             className={classes.imageArea}
@@ -128,7 +124,7 @@ function CardItem(props) {
           />
           <CardContent>
             <Typography className={classes.subTitle}>
-            {props.data.model}
+              {props.data.model}
             </Typography>
             <Typography className={classes.desciption}>
               <Grid container>
@@ -199,8 +195,12 @@ function CardItem(props) {
                 text={props.data._id}
                 onCopy={() => alert("ID number copied to clipboard")}
               >
-                <Button className={classes.btnCTA} variant="contained" fullWidth>
-                  Copy ID 
+                <Button
+                  className={classes.btnCTA}
+                  variant="contained"
+                  fullWidth
+                >
+                  Copy ID
                 </Button>
               </CopyToClipboard>
             </>
@@ -224,25 +224,24 @@ function CardItem(props) {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-       
       >
-       
-          <div id="close-btn">
-            <Button className={classes.btn} onClick={closeModal}>Close</Button>
-          </div>
+        <div id="close-btn">
+          <Button className={classes.btn} onClick={closeModal}>
+            Close
+          </Button>
+        </div>
 
-          <div id="carousel">
-            <AliceCarousel mouseTrackingEnabled>
-              {props.data.imagesURL.map(function (item, i) {
-                return (
-                  <div className="carousel-item">
-                    <img key={i} src={props.data.imagesURL[i]} alt="" />
-                  </div>
-                );
-              })}
-            </AliceCarousel>
-          </div>
-        
+        <div id="carousel">
+          <AliceCarousel mouseTrackingEnabled>
+            {props.data.imagesURL.map(function (item, i) {
+              return (
+                <div className="carousel-item">
+                  <img key={i} src={props.data.imagesURL[i]} alt="" />
+                </div>
+              );
+            })}
+          </AliceCarousel>
+        </div>
       </Modal>
     </div>
   );
