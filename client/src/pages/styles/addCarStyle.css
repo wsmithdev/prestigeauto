@@ -1,0 +1,44 @@
+#add-car-section {
+  min-height: 100vh;
+  height: 100%;
+}
+
+#add-car-form-section {
+  margin: 50px auto;
+  background-color: #e0e0e0;
+  width: 30rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-car-section h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+#add-car-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#add-car-btns {
+  width: 50%;
+  margin: 0 auto 30px auto;
+}
+
+@media (max-width: 768px) {
+  #add-car-form-section {
+    width: 90%;
+  }
+
+  #add-car-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #add-car-btns {
+    width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}

@@ -1,0 +1,44 @@
+#signup-section {
+  height: 100vh;
+  text-align: center;
+}
+
+#signup-form-section {
+  margin: 50px auto;
+  background-color: #e0e0e0;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#signup-section h1 {
+  padding: 2rem;
+}
+
+#signup-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#signup-btns {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  #signup-form-section {
+    width: 90%;
+  }
+
+  #signup-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #signup-btns {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

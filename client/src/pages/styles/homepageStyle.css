@@ -1,0 +1,80 @@
+#homepage-section {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#latest-arrivals {
+  margin-top: 10px;
+ 
+}
+
+#latest-arrivals p {
+
+
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 2rem 0;
+      color: #fff;
+      font-family: Snell Roundhand;
+
+}
+
+#slideshow {
+  width: 60vw;
+  margin: auto;
+  
+ 
+}
+
+#latest-arrivals-item img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+
+ 
+}
+
+#fleet-btn {
+  /* display: none; */
+  width: 10vw;
+  margin: 3rem auto;
+}
+
+@media (max-width: 768px) {
+  #fleet-btn {
+    display: block;
+    width: 40vw;
+    margin: 3rem auto;
+    
+  }
+
+  #slideshow {
+    margin: auto;
+    width: 100vw;
+  }
+  #latest-arrivals {
+    margin-top: 5vh;
+  }
+  #latest-arrivals p {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-family: Snell Roundhand;
+
+}
+  #latest-arrivals-item img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 30vh;
+    
+  }
+}

@@ -1,0 +1,41 @@
+#about-section {
+    text-align: center;
+    min-height: 100vh;
+    background-color: #202020;
+    color:lightgrey;
+}
+
+#about-section h1 {
+    margin-top: 2rem;
+}
+
+#about-section p {
+    max-width: 60ch;
+    margin: 1rem auto 2rem auto;
+    line-height: 1.5rem;
+}
+
+#about-image {
+ 
+    max-width: 60ch;
+    
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+#about-image img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #about-section p {
+        max-width: 60ch;
+        margin: 1rem;
+        line-height: 1.5rem;
+      }
+
+    #about-image {
+        margin: 2rem 1rem;
+    }
+}

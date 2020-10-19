@@ -1,0 +1,45 @@
+#login-section {
+  height: 100vh;
+  text-align: center;
+}
+
+#login-form-section {
+  margin: 50px auto;
+  background-color: #e0e0e0;
+  width: 30rem;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-section h1 {
+  padding: 2rem;
+}
+
+#login-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#login-btns {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  #login-form-section {
+    width: 90%;
+  }
+
+  #login-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #login-btns {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+

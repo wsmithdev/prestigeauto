@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;  /* Hide scrollbar - IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar - Firefox */  
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbar - Chrome, Safari and Opera */
+}
+
+.App {
+  /* text-align: center; */
+  background-color: rgb(32, 32, 32);
+}
+
+
+
