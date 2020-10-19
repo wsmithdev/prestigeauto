@@ -28,7 +28,7 @@ function RespNavbar(props) {
         </a>
       </div>
       <div className="navbar-btn">
-        <a href="/cars">Fleet</a>
+        <a href="/fleet">Fleet</a>
         <a href="/membership">Memberships</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>

@@ -88,7 +88,7 @@ function Signup(props) {
 
         // Succesful login, redirect to /cars page
         if (data.user) {
-          window.location.href = "/cars";
+          window.location.href = "/fleet";
         } else {
           // Login failed
           notify("Signup failed, please try again");

@@ -61,7 +61,7 @@ function RightNav(props) {
         ""
       )}
       <li>
-        <a href="/cars">Fleet</a>
+        <a href="/fleet">Fleet</a>
       </li>
       <li>
         <a href="/membership">Membership</a>

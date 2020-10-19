@@ -7,13 +7,8 @@ import "./styles/membershipStyle.css";
 // Import images
 import Cars from "../images/cars.jpg";
 
-// Import icons
-import Tick from "../icons/tick.png";
-import Cancel from "../icons/cancel.png";
-import Bronze from "../icons/bronze.png";
-
+// Import MUI components
 import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
 // MUI styles

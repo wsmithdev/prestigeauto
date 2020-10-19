@@ -55,7 +55,7 @@ function RemoveCar(props) {
       closeOnClick: true,
       pauseOnHover: false,
       draggable: false,
-      onClose: () => (window.location.href = "/cars"),
+      onClose: () => (window.location.href = "/fleet"),
     });
 
   // Input handler

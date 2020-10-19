@@ -77,9 +77,9 @@ function Login(props) {
     fetch("/login", requestOptions)
       .then(async (res) => {
         const data = await res.json();
-        // Succesful login, redirect to /cars page
+        // Succesful login, redirect to /fleet page
         if (data.user) {
-          window.location.href = "/cars";
+          window.location.href = "/fleet";
         } else {
           // Login failed
           notify("Login failed, please try again");

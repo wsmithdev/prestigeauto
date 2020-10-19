@@ -111,7 +111,7 @@ function HomePage(props) {
       </div>
       <div id="fleet-btn">
         <Button
-          href="/cars"
+          href="/fleet"
           className={classes.btn}
           fullWidth
           variant="contained"

@@ -96,7 +96,7 @@ function AddCar(props) {
       closeOnClick: true,
       pauseOnHover: false,
       draggable: false,
-      onClose: () => (window.location.href = "/cars"),
+      onClose: () => (window.location.href = "/fleet"),
     });
 
   // Upload image to Cloudinary
