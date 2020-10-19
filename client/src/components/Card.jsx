@@ -207,12 +207,12 @@ function CardItem(props) {
           ) : (
             <>
               <Button
-                onClick={bookNow}
+                href="/contact"
                 className={classes.btnCTA}
                 variant="contained"
                 fullWidth
               >
-                Book Now
+                Contact
               </Button>
             </>
           )}
