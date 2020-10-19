@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+
+// Import Carousel component
 import AliceCarousel from "react-alice-carousel";
+
+// Import Copy to clipboard component
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 // Material UI components
