@@ -4,6 +4,4 @@ const User = require("../models/User");
 module.exports.bookCar_patch = async (req, res) => {
   const userId = req.params.id;
   const { carId, dates } = req.body;
-
-
 };
