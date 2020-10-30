@@ -15,8 +15,7 @@ app.use(cookieParser());
 // Connect to MongoDb
 mongoose
   .connect(
-    process.env.MONGODB_URI ||
-      "mongodb+srv://admin:admin@248363@cluster0.jpn82.mongodb.net/car-club?retryWrites=true&w=majority",
+    process.env.MONGODB_URI,
     {
       useNewUrlParser: true,
       useFindAndModify: false,
